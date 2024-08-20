@@ -1,0 +1,98 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+  html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display:flex;
+  }
+  
+  header{
+    margin: auto;
+    width:100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows:0px 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "logo2 logo2 logo2 logo2"
+      "logo artistas merch quienes_somos"; 
+  }
+
+
+.logo { 
+  grid-area: logo;
+  width: 50%;
+  visibility: visible;
+}
+
+#logazo:hover{
+  background-color: #e10e0e;
+}
+
+.logo2 { 
+  grid-area: logo2;
+  visibility: hidden;
+}
+
+header div a {
+  font-size: 150%;
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 4% 8%;
+}
+
+
+header div ul{
+  visibility: hidden;
+}
+
+header div:hover>ul{
+  visibility: visible;
+}
+
+.footer { 
+    grid-area: footer;
+    
+    text-align: center;
+    color: white;
+  }
+    
+  .quienes_somos { 
+    grid-area: quienes_somos; 
+    color: white;
+  }
+  
+  #q:hover{
+    background-color: #e10e0e;
+    width:30%;
+  }
+    
+  .merch {
+    grid-area: merch; 
+    color: white;
+  }
+  
+  #mer:hover{
+    background-color: #e10e0e;
+    width:30%;
+  }
+  
+  
+  .artistas { 
+    grid-area: artistas;
+    color: white;
+  }
+    
+  #art:hover{
+    background-color: #e10e0e;
+    width: 30%;
+  }
+  
+  .foto { 
+    margin-top: 5%; 
+    grid-area: foto; 
+  }
